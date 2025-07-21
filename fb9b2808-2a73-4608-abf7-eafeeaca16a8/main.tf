@@ -1,16 +1,28 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
-    }
-  }
+module "test-401-workflow" {
+  source = "./test-401-workflow"
 }
 
-provider "aws" {
-  region = var.region
+module "abc-vedant-new-1" {
+  source = "./abc-vedant-new-1"
 }
 
-resource "aws_s3_bucket" "bucket" {
-  bucket = var.bucket_name
+module "new-workflow-vedant" {
+  source = "./new-workflow-vedant"
 }
+
+module "abc-vedant-new" {
+  source = "./abc-vedant-new"
+}
+
+module "new-workflow-github-test" {
+  source = "./new-workflow-github-test"
+}
+
+module "workflow_bvc" {
+  source = "./workflow_bvc"
+}
+
+module "workflow1" {
+  source = "./workflow1"
+}
+
