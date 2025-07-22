@@ -3,5 +3,5 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "nwe-adssasa-123d"
+  bucket = "vedant-vedant-1234"
 }
