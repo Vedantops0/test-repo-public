@@ -12,5 +12,5 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "bucket-1-validate-kiwi-test-1"
+  bucket = "bucket-1-validate-kiwi-test-2"
 }
