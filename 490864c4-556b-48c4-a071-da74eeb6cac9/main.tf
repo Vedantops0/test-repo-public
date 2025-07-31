@@ -1,31 +1,16 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
-    }
-  }
-  required_version = ">= 1.0.0"
+module "vedant309904302" {
+  source = "./vedant309904302"
 }
 
-provider "aws" {
-  region = var.region
+module "vedant-vedant-vedant2423457654343454" {
+  source = "./vedant-vedant-vedant2423457654343454"
 }
 
-resource "aws_s3_bucket" "bucket" {
-  bucket = var.bucket_name
-
-  tags = {
-    Name        = var.bucket_name
-    Environment = var.environment
-  }
+module "vedant-vedant-vedant13143122321" {
+  source = "./vedant-vedant-vedant13143122321"
 }
 
-# Explicitly disable ACLs
-resource "aws_s3_bucket_ownership_controls" "bucket_ownership" {
-  bucket = aws_s3_bucket.bucket.id
-
-  rule {
-    object_ownership = "BucketOwnerEnforced"
-  }
+module "Create_a_new_pr_for_the_changes" {
+  source = "./Create_a_new_pr_for_the_changes"
 }
+
