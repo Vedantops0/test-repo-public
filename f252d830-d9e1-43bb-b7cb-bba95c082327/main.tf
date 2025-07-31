@@ -1,3 +1,7 @@
+module "vedant-prod-test-opentofu-validate-1" {
+  source = "./vedant-prod-test-opentofu-validate-1"
+}
+
 module "vedant-prod-test-opentofu-plan-1" {
   source = "./vedant-prod-test-opentofu-plan-1"
 }
