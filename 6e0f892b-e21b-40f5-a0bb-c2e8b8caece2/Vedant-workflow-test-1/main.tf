@@ -4,6 +4,6 @@ module "s3-bucket-1" {
 }
 
 resource "aws_s3_bucket" "aws_s3_bucket-1" {
-  bucket = "Vedant-workflow-test-1-bucket-1"
+  bucket = "Vedant-workflow-test-1-bucket-1fdfasdasasa"
 }
 
