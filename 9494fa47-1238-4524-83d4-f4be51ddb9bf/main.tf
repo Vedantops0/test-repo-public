@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "aws" {
-  region = var.region
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "bucket-1-validate-kiwi-test-2"
+  bucket = var.bucket_name
 }
